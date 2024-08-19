@@ -114,12 +114,12 @@ const Banner = () => {
       return (
         <div>
             <Slider {...settings}>
-                <Image imageClass='w-full h-[480px]' scr='/1.jpg'/>
-                <Image imageClass='w-full h-[480px]' scr='/2.jpg'/>
-                <Image imageClass='w-full h-[480px]' scr='/3.jpg' />
-                <Image imageClass='w-full h-[480px]' scr='/4.jpg' />
-                <Image imageClass='w-full h-[480px]' scr='/5.jpg' />
-                <Image imageClass='w-full h-[480px]' scr='/6.jpg' />
+                <Image imageClass='w-full ' scr='/1.jpg'/>
+                <Image imageClass='w-full ' scr='/2.jpg'/>
+                <Image imageClass='w-full ' scr='/3.jpg' />
+                <Image imageClass='w-full ' scr='/4.jpg' />
+                <Image imageClass='w-full ' scr='/5.jpg' />
+                <Image imageClass='w-full ' scr='/6.jpg' />
          
          </Slider>
          {/* <div className='flex justify-between md:py-8 py-4 px-5 md:px-36 border-b-2 border-[#F0F0F0]'>
