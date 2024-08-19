@@ -13,7 +13,7 @@ import OurClients from './OurClients'
 const Home = () => {
   return (
 
-    <>
+    <div className='bg-[#F7F9FB] '>
     <Banner/>
     <OurJourney/>
     {/* <BestSeller/> */}
@@ -28,7 +28,7 @@ const Home = () => {
     
     
 
-    </>
+    </div>
 
 
 
