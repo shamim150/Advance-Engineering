@@ -3,7 +3,7 @@ import Container from "../layer/Container";
 
 const ConnectWith = () => {
   return (
-    <Container className="my-10 grid grid-cols-3 gap-3">
+    <Container className="my-10 grid grid-cols-3 gap-3 bg-[#F7F9FB] ">
       <div className="col-span-1 text-center cursor-pointer transition-all duration-700  border-2 hover:border-red-500 py-8 px-4   bg-white shadow-lg rounded-lg">
         <h2 className="text-2xl font-bold font-DM text-[#ff5e14] ">
           Induss (Pioneerin Perboling & Drier Technology)

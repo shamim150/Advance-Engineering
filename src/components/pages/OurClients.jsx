@@ -5,7 +5,7 @@ import TitleHeader from "../layer/TitleHeader";
 const OurClients = () => {
   return (
 
-    <Container>
+    <Container className='bg-[#F7F9FB] '>
       <TitleHeader className="text-center" headerText="Our Clients" />
 
       <div className="flex justify-between my-10 ">
