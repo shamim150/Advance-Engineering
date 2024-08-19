@@ -84,7 +84,7 @@ const Arrival = () => {
             price="44"
             brand="Black"
             offer="10%"
-            img="/public/product/product_1.jpg"
+            img="/product/product_1.jpg"
           />
           <ProductItem
             className="w-full px-5"
@@ -92,7 +92,7 @@ const Arrival = () => {
             price="44"
             brand="Black"
             offer=""
-            img="/public/product/product_2.jpg"
+            img="/product/product_2.jpg"
           />
           <ProductItem
             className="w-full px-5"
@@ -100,7 +100,7 @@ const Arrival = () => {
             price="44"
             brand="Black"
             offer="New"
-            img="/public/product/product_3.jpg"
+            img="/product/product_3.jpg"
           />
           <ProductItem
             className="w-full px-5"
@@ -108,7 +108,7 @@ const Arrival = () => {
             price="44"
             brand="Black"
             offer="50%"
-            img="/public/product/product_4.jpg"
+            img="/product/product_4.jpg"
           />
         </Slider>
       </Container>

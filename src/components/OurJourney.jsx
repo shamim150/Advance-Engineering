@@ -22,8 +22,8 @@ const OurJourney = () => {
            
 
             <div className='flex justify-center items-center'>
-            {/* <img className='w-full h-full object-cover' src={'/public/OurJourney/product_2.jpg'} alt="" /> */}
-            <img className='w-[700px] h-[700px] object-cover  ' src={'/public/OurJourney/product_1.jpg'} alt="" />
+            {/* <img className='w-full h-full object-cover' src={'/OurJourney/product_2.jpg'} alt="" /> */}
+            <img className='w-[700px] h-[700px] object-cover  ' src={'/OurJourney/product_1.jpg'} alt="" />
             </div>
 
 
@@ -37,10 +37,10 @@ const OurJourney = () => {
             </div>
             <div className="right w-[780px] h-[780px]  flex flex-col justify-between">
                 <div className="top w-full h-[370px] ">
-                    <img className='w-full h-full object-cover' src='/public/saleOffer/Ad_2.jpg' alt="" />
+                    <img className='w-full h-full object-cover' src='/saleOffer/Ad_2.jpg' alt="" />
                 </div>
                 <div className="bottom w-full h-[370px]">
-                    <img className='w-full h-full object-cover' src="/public/saleOffer/Ad_3.jpg" alt="" />
+                    <img className='w-full h-full object-cover' src="/saleOffer/Ad_3.jpg" alt="" />
                 </div>
             </div> */}
             

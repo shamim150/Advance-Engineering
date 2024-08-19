@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import Slider from "react-slick";
 import Image from './layer/Image';
-// import Banner1 from '/public/1'
-// import Banner2 from '/public/2'
-// import Banner3 from '/public/3'
-// // import Banner4 from '/public/4'
-// // import Banner5 from '/public/5'
-// // import Banner6 from '/public/6'
+// import Banner1 from '/1'
+// import Banner2 from '/2'
+// import Banner3 from '/3'
+// // import Banner4 from '/4'
+// // import Banner5 from '/5'
+// // import Banner6 from '/6'
 
 import { PiNumberTwoBold } from 'react-icons/pi';
 import { FaTruck } from 'react-icons/fa';
@@ -114,12 +114,12 @@ const Banner = () => {
       return (
         <div>
             <Slider {...settings}>
-                <Image imageClass='w-full h-[480px]' scr='/public/1.jpg'/>
-                <Image imageClass='w-full h-[480px]' scr='/public/2.jpg'/>
-                <Image imageClass='w-full h-[480px]' scr='/public/3.jpg' />
-                <Image imageClass='w-full h-[480px]' scr='/public/4.jpg' />
-                <Image imageClass='w-full h-[480px]' scr='/public/5.jpg' />
-                <Image imageClass='w-full h-[480px]' scr='/public/6.jpg' />
+                <Image imageClass='w-full h-[480px]' scr='/1.jpg'/>
+                <Image imageClass='w-full h-[480px]' scr='/2.jpg'/>
+                <Image imageClass='w-full h-[480px]' scr='/3.jpg' />
+                <Image imageClass='w-full h-[480px]' scr='/4.jpg' />
+                <Image imageClass='w-full h-[480px]' scr='/5.jpg' />
+                <Image imageClass='w-full h-[480px]' scr='/6.jpg' />
          
          </Slider>
          {/* <div className='flex justify-between md:py-8 py-4 px-5 md:px-36 border-b-2 border-[#F0F0F0]'>
