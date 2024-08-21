@@ -1,12 +1,7 @@
 import React, { useState } from 'react'
 import Slider from "react-slick";
 import Image from './layer/Image';
-// import Banner1 from '/1'
-// import Banner2 from '/2'
-// import Banner3 from '/3'
-// // import Banner4 from '/4'
-// // import Banner5 from '/5'
-// // import Banner6 from '/6'
+
 
 import { PiNumberTwoBold } from 'react-icons/pi';
 import { FaTruck } from 'react-icons/fa';
@@ -122,27 +117,7 @@ const Banner = () => {
                 <Image imageClass='w-full ' scr='/6.jpg' />
          
          </Slider>
-         {/* <div className='flex justify-between md:py-8 py-4 px-5 md:px-36 border-b-2 border-[#F0F0F0]'>
-          <div className='flex items-center md:gap-4 gap-1'>
-            <div className="icon"><PiNumberTwoBold /></div>
-            <div className="text text-[#6D6D6D] text-nowrap font-DM md:text[16px] text-[8px]">
-              <p>Two years warranty</p>
-            </div>
-          </div>
-          <div className='flex items-center md:gap-4 gap-1'>
-            <div className="icon"><FaTruck /></div>
-            <div className="text text-[#6D6D6D] font-DM md:text[16px] text-[8px] text-nowrap ">
-              <p>Free shipping</p>
-            </div>
-          </div>
-          <div className='flex items-center md:gap-4 gap-1'>
-            <div className="icon"><FaArrowRotateLeft /></div>
-            <div className="text text-[#6D6D6D] font-DM md:text[16px] text-[8px] text-nowrap ">
-              <p>Return policy in 30 days</p>
-            </div>
-          </div>
-
-         </div> */}
+    
         </div> 
         
       )
