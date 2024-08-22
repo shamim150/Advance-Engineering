@@ -59,38 +59,16 @@ export const Navbar = () => {
               liText="Key Person Sales & Service"
               iconName={<FaAngleDown />}
             />
-            <Li to={"/contact"} liText="Contact" iconName={<FaAngleDown />} />
-
-       
-              {" "}
-           {/* <div className="flex items-center relative">
-           <input
-                className="rounded-[10px] text-center overflow-hidden ml-10 cursor-pointer py-3 md:w-40 w-full bg-white  "
+            <Li to={"/contact"} liText="Contact" iconName={<FaAngleDown />} />{" "}
+            <div className="serach relative w-full md:w-auto rounded-xl overflow-hidden ml-4">
+              <input
+                className="md:w-[150px] rounded-xl  w-full py-2 md:px-5 px-3 outline-0 bg-white"
                 type="text"
                 placeholder="Search"
               />
-              
-              <FaSearch className="absolute top-1/2 -translate-y-1/2" />
-           </div> */}
 
-
-
-
-
-           <div className="serach relative w-full md:w-auto rounded-xl overflow-hidden ml-4">
-          <input
-            className="md:w-[150px] rounded-xl  w-full md:py-3 py-2 md:px-5 px-3 outline-0 bg-white"
-            type="text"
-            placeholder="Search"
-          />
-
-          <FaSearch className="absolute top-1/2 -translate-y-1/2 md:right-5 right-3 text-primary" />
-        </div>
-
-
-
-
-          
+              <FaSearch className="absolute top-1/2 -translate-y-1/2 md:right-5 right-3 text-primary" />
+            </div>
           </ul>
         </div>
 

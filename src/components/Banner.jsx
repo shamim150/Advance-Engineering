@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
 import Slider from "react-slick";
 import Image from './layer/Image';
-
-
 import { PiNumberTwoBold } from 'react-icons/pi';
 import { FaTruck } from 'react-icons/fa';
 import { FaArrowRotateLeft } from 'react-icons/fa6';
@@ -15,6 +13,7 @@ const Banner = () => {
     let [active, setActive] = useState(0)
 
     var settings = { 
+      
         arrows: false,
         dots: true,
         infinite: true,
@@ -107,7 +106,7 @@ const Banner = () => {
       };
 
       return (
-        <div>
+        <div className='hover:scale-100'>
             <Slider {...settings}>
                 <Image imageClass='w-full ' scr='/1.jpg'/>
                 <Image imageClass='w-full ' scr='/2.jpg'/>

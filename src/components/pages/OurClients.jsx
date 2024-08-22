@@ -6,7 +6,7 @@ const OurClients = () => {
   return (
 
     <Container className='bg-[#F7F9FB] '>
-      <TitleHeader className="text-center" headerText="Our Clients" />
+      <TitleHeader className="text-center" headerText="Our Corporate Clients" />
 
       <div className="flex justify-between my-10 ">
 
