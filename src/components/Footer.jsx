@@ -8,7 +8,14 @@ import TitleHeader from "./layer/TitleHeader";
 
 const Footer = () => {
   return (
-    <div className="bg-[#f7f7f8]">
+    <div className="bg-[#f7f7f8] relative">
+
+      {/* Google translator */}
+      <div className="fixed top-4 right-5" id="google_translate_element"></div>
+      {/* Google translator */}
+    
+      
+
       <Container>
         <div className="grid grid-cols-6 grid-rows-1 pt-14">
           <div className="col-span-2">
@@ -23,18 +30,28 @@ const Footer = () => {
               Dhaka Office:- Sector-09, Road-3F, House-18, Uttara, Dhaka-1230.
             </p>
 
-            <Link  className=" text-sm font-bold font-DM block leading-7 text-[#6D6D6D] ">
-              
-            </Link> 
+            <Link className=" text-sm font-bold font-DM block leading-7 text-[#6D6D6D] "></Link>
 
-             <a className="text-sm font-bold font-DM block leading-7 text-[#6D6D6D]" href="tel:+8802588881523">Tell:- +8802588881523</a>
-           
+            <a
+              className="text-sm font-bold font-DM block leading-7 text-[#6D6D6D]"
+              href="tel:+8802588881523"
+            >
+              Tell:- +8802588881523
+            </a>
 
-            <a className="text-sm font-bold font-DM block leading-7 text-[#6D6D6D]" href="tel:+8801717507404">Mobile:- +8801717507404</a>
+            <a
+              className="text-sm font-bold font-DM block leading-7 text-[#6D6D6D]"
+              href="tel:+8801717507404"
+            >
+              Mobile:- +8801717507404
+            </a>
 
-            <a className="text-sm font-bold font-DM block leading-7 text-[#6D6D6D]" href="mailto:company.com">company.com</a>
-
-            
+            <a
+              className="text-sm font-bold font-DM block leading-7 text-[#6D6D6D]"
+              href="mailto:company.com"
+            >
+              company.com
+            </a>
 
             <TitleHeader className="text-xl pt-5" headerText="Folow Us" />
 

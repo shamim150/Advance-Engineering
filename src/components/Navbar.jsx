@@ -25,7 +25,7 @@ export const Navbar = () => {
   }, []);
 
   return (
-    <nav className="overflow-hidden bg-[#f7f7f8]">
+    <nav className="overflow-hidden">
       <Container className="relative flex items-center  justify-center gap-5 md:gap-0 md:py-6 py-4 px-3 md:px-0 ">
         <div className="flex md:justify-center">
           <Image
@@ -36,7 +36,7 @@ export const Navbar = () => {
           />
 
           <ul
-            className={`text-center transition-all duration-300 flex md:flex-row  flex-col  bg-slate-300 md:bg-transparent absolute top-full left-0 md:static w-full md:w-auto p-4 md:p-0 
+            className={`text-center transition-all duration-300 flex  md:flex-row  flex-col  bg-slate-300 md:bg-transparent absolute top-full left-0 md:static w-full md:w-auto p-4 md:p-0 
             
             ${show ? "translate-x-0 " : "translate-x-full md:translate-x-0"}`}
           >
@@ -87,8 +87,11 @@ export const Navbar = () => {
     </nav>
   );
 };
-<li>
+
+{
+  /* <li>
   <Link className="font-DM text-[#767676] font-bold hover:text-Primary transi duration-300">
     Home
   </Link>
-</li>;
+</li>; */
+}

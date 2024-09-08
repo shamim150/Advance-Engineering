@@ -7,9 +7,12 @@ import { Navbar } from '../Navbar'
 const RootLayOut = () => {
   return (
     <div>
-        <Navbar/>
+        <Navbar/> 
+ 
 
         <Outlet/>
+
+       
 
         <Footer/> 
     </div>
