@@ -117,18 +117,7 @@ const Products = () => {
             <img src="/public/Products/Colour Sorter.jpeg" alt="" />
           </div>
         </div>
-        <div>
-          <TitleHeader className="text-center" headerText="Paddy Cleaner" />
-          <p className="text-center">
-            boiler, apparatus designed to convert a liquid to vapour. In a
-            conventional steam power plant, a boiler consists of a furnace in
-            which fuel is burned, surfaces to transmit heat from the combustion
-            products to the water, and a space where steam can form and collect.
-          </p>
-          <div className="image flex justify-center items-center mt-4">
-            <img src="/public/Products/Paddy Cleaner.jpeg" alt="" />
-          </div>
-        </div>
+      
         <div>
           <TitleHeader className="text-center" headerText="Paddy Cleaner" />
           <p className="text-center">
