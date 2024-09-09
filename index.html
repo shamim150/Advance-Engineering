@@ -26,23 +26,26 @@
   <body>
     <div id="root"></div>
 
-
-   
-
+    <!-- Google translator  -->
+    <div class="fixed top-16 right-0" id="google_translate_element"></div>
+    <!-- Google translator  -->
 
     <!-- Google translator -->
     <script type="text/javascript">
       function googleTranslateElementInit() {
-        new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+        new google.translate.TranslateElement(
+          { pageLanguage: "en" },
+          "google_translate_element"
+        );
       }
-      </script>
-      
-      <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    <!-- Google translator -->
-    
-    <script type="module" src="/src/main.jsx"></script>
-  
+    </script>
 
-   
+    <script
+      type="text/javascript"
+      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+    ></script>
+    <!-- Google translator -->
+
+    <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
