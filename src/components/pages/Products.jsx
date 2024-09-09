@@ -74,7 +74,7 @@ const Products = () => {
             products to the water, and a space where steam can form and collect.
           </p>
           <div className="image flex justify-center items-center mt-4">
-            <img src="/public/Products/Flour Machinery.jpeg" alt="" />
+            <img src="/Products/Flour Machinery.jpeg" alt="" />
           </div>
         </div>
 
@@ -88,7 +88,7 @@ const Products = () => {
             products to the water, and a space where steam can form and collect.
           </p>
           <div className="image flex justify-center items-center mt-4">
-            <img src="/public/Products/Oil Mill Machinery with Refine System.webp" alt="" />
+            <img src="/Products/Oil Mill Machinery with Refine System.webp" alt="" />
           </div>
         </div>
 
@@ -101,7 +101,7 @@ const Products = () => {
             products to the water, and a space where steam can form and collect.
           </p>
           <div className="image flex justify-center items-center mt-4">
-            <img src="/public/Products/Rice Mill Machinery.jpg" alt="" />
+            <img src="/Products/Rice Mill Machinery.jpg" alt="" />
           </div>
         </div>
 
@@ -114,7 +114,7 @@ const Products = () => {
             products to the water, and a space where steam can form and collect.
           </p>
           <div className="image flex justify-center items-center mt-4">
-            <img src="/public/Products/Colour Sorter.jpeg" alt="" />
+            <img src="/Products/Colour Sorter.jpeg" alt="" />
           </div>
         </div>
       
@@ -127,7 +127,7 @@ const Products = () => {
             products to the water, and a space where steam can form and collect.
           </p>
           <div className="image flex justify-center items-center mt-4">
-            <img src="/public/Products/Paddy Cleaner.jpeg" alt="" />
+            <img src="/Products/Paddy Cleaner.jpeg" alt="" />
           </div>
         </div>
         <div>
@@ -139,7 +139,7 @@ const Products = () => {
             products to the water, and a space where steam can form and collect.
           </p>
           <div className="image flex justify-center items-center mt-4">
-            <img src="/public/Products/Feed Mill Machinery.jpg" alt="" />
+            <img src="/Products/Feed Mill Machinery.jpg" alt="" />
           </div>
         </div>
         <div>
@@ -151,7 +151,7 @@ const Products = () => {
             products to the water, and a space where steam can form and collect.
           </p>
           <div className="image flex justify-center items-center mt-4">
-            <img src="/public/Products/Grain Silo.jpeg" alt="" />
+            <img src="/Products/Grain Silo.jpeg" alt="" />
           </div>
         </div>
 
