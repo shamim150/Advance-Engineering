@@ -10,9 +10,7 @@ const Footer = () => {
   return (
     <div className="bg-[#f7f7f8] relative">
 
-      {/* Google translator */}
-      <div className="fixed top-4 right-5" id="google_translate_element"></div>
-      {/* Google translator */}
+      
     
       
 
