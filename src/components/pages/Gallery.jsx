@@ -1,36 +1,66 @@
-import React from "react";
-import Container from "../layer/Container";
+import React, { useState } from "react";
 import TitleHeader from "../layer/TitleHeader";
+import Container from "../layer/Container";
 
 const Gallery = () => {
+  const [activeTab, setActiveTab] = useState("showAll");
+
+  const images = {
+    showAll: [
+      // Add URLs for images
+      { src: "/Gallery/Rice -Mill.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/Rice -Mill.jpg", alt: "Image 2", caption: "Our Latest Exhibition" },
+      { src: "/Gallery/Rice -Mill.jpg", alt: "Image 3", caption: "Innovative Machinery" },
+    ],
+    exhibition: [
+      // Add URLs for exhibition images
+      { src: "/gallery/exhibition1.jpg", alt: "Exhibition 1", caption: "Exhibition at XYZ Fair" },
+      { src: "/gallery/exhibition2.jpg", alt: "Exhibition 2", caption: "Showcasing Innovations" },
+    ],
+    awards: [
+      // Add URLs for awards images
+      { src: "/gallery/award1.jpg", alt: "Award 1", caption: "Best Machinery Award 2023" },
+      { src: "/gallery/certificate1.jpg", alt: "Certificate 1", caption: "ISO Certification" },
+    ],
+  };
+
   return (
-    <div>
+    <div className="bg-gray-100 py-20">
       <Container>
-        <div>
-          <TitleHeader className='text-center text-red-400 my-3' headerText="Show All " />
-          <div className="flex gap-10 items-center justify-center">
-            <img className="w-[400px]" src="/Gallery/Rice -Mill.jpg" alt="" />
-            <img className="w-[400px]" src="/Gallery/Rice -Mill.jpg" alt="" />
-            <img className="w-[400px]" src="/Gallery/Rice -Mill.jpg" alt="" />
-          </div>
+        <TitleHeader
+          className="text-center text-5xl font-extrabold text-gray-900 mb-6"
+          headerText="Gallery"
+        />
+        
+        <p className="text-center text-gray-600 max-w-2xl mx-auto text-lg leading-relaxed mb-12">
+          Explore our gallery showcasing our cutting-edge rice mill machinery, participation in exhibitions, and our prestigious awards and certificates. Each image tells a story of innovation and excellence in engineering.
+        </p>
+
+        {/* Tab Navigation */}
+        <div className="flex justify-center space-x-4 mb-8">
+          {["showAll", "exhibition", "awards"].map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setActiveTab(tab)}
+              className={`px-4 py-2 rounded-lg font-semibold ${
+                activeTab === tab ? "bg-green-600 text-white" : "bg-white text-gray-700"
+              } shadow transition duration-300 hover:bg-green-500 hover:text-white`}
+            >
+              {tab.charAt(0).toUpperCase() + tab.slice(1).replace(/([A-Z])/g, ' $1')}
+            </button>
+          ))}
         </div>
-        <div>
-          <TitleHeader headerText="Exhibition" />
-          <div className="flex items-center justify-center">
-            <img src="/Gallery/Rice -Mill.jpg" alt="" />
-          </div>
-        </div>
-        <div>
-          <TitleHeader headerText="Awards" />
-          <div className="flex items-center justify-center">
-            <img src="/Gallery/Rice -Mill.jpg" alt="" />
-          </div>
-        </div>
-        <div>
-          <TitleHeader headerText="Certificate" />
-          <div className="flex items-center justify-center">
-            <img src="/Gallery/Rice -Mill.jpg" alt="" />
-          </div>
+
+        {/* Image Gallery */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          {images[activeTab].map((image, index) => (
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src={image.src} alt={image.alt} className="w-full h-48 object-cover transition-transform transform hover:scale-105" />
+              <div className="p-4">
+                <h4 className="text-lg font-semibold text-gray-800">{image.caption}</h4>
+              </div>
+            </div>
+          ))}
         </div>
       </Container>
     </div>
