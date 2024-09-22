@@ -7,9 +7,8 @@ const Gallery = () => {
     <div>
       <Container>
         <div>
-          <TitleHeader headerText="Show All " />
+          <TitleHeader className='text-center text-red-400 my-3' headerText="Show All " />
           <div className="flex gap-10 items-center justify-center">
-            <img className="w-[400px]" src="/Gallery/Rice -Mill.jpg" alt="" />
             <img className="w-[400px]" src="/Gallery/Rice -Mill.jpg" alt="" />
             <img className="w-[400px]" src="/Gallery/Rice -Mill.jpg" alt="" />
             <img className="w-[400px]" src="/Gallery/Rice -Mill.jpg" alt="" />
