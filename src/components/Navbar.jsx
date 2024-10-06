@@ -36,7 +36,7 @@ export const Navbar = () => {
           />
 
           <ul
-            className={`text-center transition-all duration-300 flex  md:flex-row  flex-col  bg-slate-300 md:bg-transparent absolute top-full left-0 md:static w-full md:w-auto p-4 md:p-0 
+            className={`text-center transition-all duration-300 flex  md:flex-row  flex-col  bg-slate-300 md:bg-transparent absolute top-full left-0 md:static w-full md:w-auto p-2 md:p-0 
             
             ${show ? "translate-x-0 " : "translate-x-full md:translate-x-0"}`}
           >
@@ -88,10 +88,3 @@ export const Navbar = () => {
   );
 };
 
-{
-  /* <li>
-  <Link className="font-DM text-[#767676] font-bold hover:text-Primary transi duration-300">
-    Home
-  </Link>
-</li>; */
-}
