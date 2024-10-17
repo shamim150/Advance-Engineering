@@ -8,9 +8,21 @@ const Gallery = () => {
   const images = {
     showAll: [
       // Add URLs for images
-      { src: "/Gallery/Rice -Mill.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
-      { src: "/Gallery/Rice -Mill.jpg", alt: "Image 2", caption: "Our Latest Exhibition" },
-      { src: "/Gallery/Rice -Mill.jpg", alt: "Image 3", caption: "Innovative Machinery" },
+      { src: "/Gallery/gallery_1.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_2.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_3.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_4.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_5.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_6.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_7.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_8.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_9.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_10.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_11.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_12.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_13.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+  
+    
     ],
     exhibition: [
       // Add URLs for exhibition images
@@ -55,7 +67,7 @@ const Gallery = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {images[activeTab].map((image, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
-              <img src={image.src} alt={image.alt} className="w-full h-48 object-cover transition-transform transform hover:scale-105" />
+              <img src={image.src} alt={image.alt} className="w-full h-60 object-cover transition-transform transform hover:scale-105" />
               <div className="p-4">
                 <h4 className="text-lg font-semibold text-gray-800">{image.caption}</h4>
               </div>
