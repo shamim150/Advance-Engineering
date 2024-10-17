@@ -108,7 +108,7 @@ const Banner = () => {
       return (
         <div className='hover:scale-100'>
             <Slider {...settings}>
-                <Image imageClass='w-full  ' scr='/Slidder/Slider_1.jpg'/>
+                <Image imageClass='w-full ' scr='/Slidder/Slider_1.jpg'/>
                 <Image imageClass='w-full ' scr='/Slidder/Slider_2.jpg'/>
                 <Image imageClass='w-full ' scr='/Slidder/Slider_3.jpg'/>
                 <Image imageClass='w-full ' scr='/Slidder/Slider_4.jpg'/>
