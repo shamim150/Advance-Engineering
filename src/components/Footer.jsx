@@ -40,7 +40,7 @@ const Footer = () => {
               className="text-sm font-bold text-[#6D6D6D] block"
               href="mailto:company.com"
             >
-              company.co
+              company.com
             </a>
 
             <TitleHeader className="text-xl pt-5" headerText="Follow Us" />
