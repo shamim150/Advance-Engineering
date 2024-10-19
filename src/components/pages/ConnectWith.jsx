@@ -12,7 +12,7 @@ const ConnectWith = () => {
           Induss (Pioneerin Perboling & Drier Technology)
         </h2>
       <div className="flex items-center justify-center my-5">
-      <img src="/connect1.jpg" alt="" />
+      <img className="max-w-[700px] h-auto object-cover w-full" src="/connect1.jpg" alt="" />
       </div>
         <p className="text-primary">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
@@ -28,7 +28,7 @@ const ConnectWith = () => {
         Maxtherm (Boiler)
         </h2>
       <div className="flex items-center justify-center my-5">
-      <img src="/connect2.jpg" alt="" />
+      <img className="max-w-[700px] h-auto object-cover w-full" src="/connect2.jpg" alt="" />
       </div>
         <p className="text-primary">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
@@ -44,7 +44,7 @@ const ConnectWith = () => {
         Qili (Rice Mill Machinery)
         </h2>
       <div className="flex items-center justify-center my-5">
-      <img src="/connect3.jpg" alt="" />
+      <img className="max-w-[700px] h-auto object-cover w-full" src="/connect3.jpg" alt="" />
       </div>
         <p className="text-primary">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,

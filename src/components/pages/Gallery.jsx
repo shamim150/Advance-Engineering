@@ -8,9 +8,9 @@ const Gallery = () => {
   const images = {
     showAll: [
       // Add URLs for images
-      { src: "/Gallery/gallery_1.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
-      { src: "/Gallery/gallery_2.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
-      { src: "/Gallery/gallery_3.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
+      { src: "/Gallery/gallery_1.jpg", alt: "Image 1", caption: "High-Performance Rice Mill 1" },
+      { src: "/Gallery/gallery_2.jpg", alt: "Image 1", caption: "High-Performance Rice Mill 2" },
+      { src: "/Gallery/gallery_3.jpg", alt: "Image 1", caption: "High-Performance Rice Mill 3" },
       { src: "/Gallery/gallery_4.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
       { src: "/Gallery/gallery_5.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
       { src: "/Gallery/gallery_6.jpg", alt: "Image 1", caption: "High-Performance Rice Mill" },
