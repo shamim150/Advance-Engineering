@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 
 const AuthorizedSales = () => {
   const partners = [
-    { name: 'Induss', logo: '/AuthorizedPartners/Induss.png' },
-    { name: 'Mexthrem', logo: '/AuthorizedPartners/Mexthrem.png' },
-    { name: 'Qili', logo: '/AuthorizedPartners/Qili.jpg',link:'https://www.facebook.com/' }, 
+    { name: 'Induss', logo: '/AuthorizedPartners/induss.jpg' },
+    { name: 'Mexthrem', logo: '/AuthorizedPartners/maxtherm.jpg' },
+    { name: 'Qili', logo: '/AuthorizedPartners/Qili.png',link:'https://www.facebook.com/' }, 
   ];
 
   return (
