@@ -4,6 +4,7 @@ import Image from './layer/Image';
 import { PiNumberTwoBold } from 'react-icons/pi';
 import { FaTruck } from 'react-icons/fa';
 import { FaArrowRotateLeft } from 'react-icons/fa6';
+import Container from './layer/Container';
 
 
 
@@ -106,7 +107,10 @@ const Banner = () => {
       };
 
       return (
-        <div className='hover:scale-100'>
+
+        // after use container
+      <Container>
+          <div className='hover:scale-100'>
             <Slider {...settings}>
                 <Image imageClass='w-full ' scr='/Slidder/Slider_1.jpg'/>
                 <Image imageClass='w-full ' scr='/Slidder/Slider_2.jpg'/>
@@ -117,6 +121,7 @@ const Banner = () => {
     
         </div> 
         
+      </Container>
       )
     }
     
