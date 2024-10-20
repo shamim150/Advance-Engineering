@@ -5,9 +5,9 @@ import TitleHeader from "../layer/TitleHeader";
 const OurClients = () => {
   const clients = [
     { name: "MGI", initials: "/OurCorporateClients/Mgi.jpg", url: "https://www.mgi.org" },
-    { name: "Akij", initials: "/public/OurCorporateClients/AKIJ.jpg", url: "https://www.gulfood.com" },
+    { name: "Akij", initials: "/OurCorporateClients/AKIJ.jpg", url: "https://www.gulfood.com" },
     { name: "TK", initials: "/OurCorporateClients/TK.jpg", url: "https://www.tkgroupbd.com" },
-    { name: "Nabil", initials: "/public/OurCorporateClients/Nabil.jpg", url: "	https://ngibd.com" },
+    { name: "Nabil", initials: "/OurCorporateClients/Nabil.jpg", url: "	https://ngibd.com" },
     { name: "SB", initials: "/OurCorporateClients/SB.jpg", url: "https://sbgroup.com.bd" },
     { name: "Desh Bondho", initials: "/OurCorporateClients/DESHBondhu.jpg", url: "https://www.dbg.com.bd" }, 
     { name: "Edrish Group", initials: "/OurCorporateClients/Edrish.jpg",  },
