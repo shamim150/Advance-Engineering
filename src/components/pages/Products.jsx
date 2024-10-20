@@ -70,7 +70,7 @@ const Products = () => {
                 <img
                   src={product.image}
                   alt={product.header}
-                  className="w-full h-full object-cover transform group-hover:scale-90 transition-transform duration-500"
+                  className="w-full h-full object-contain transform group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-50 group-hover:opacity-70 transition-opacity duration-300"></div>
               </div>
