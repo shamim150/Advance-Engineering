@@ -16,7 +16,7 @@ const Banner = () => {
     speed: 500,
     fade: true,
     autoplay: true,
-    speed: 5000, //20000
+    speed: 4000, //20000
     autoplaySpeed: 10, // 500
     cssEase: "linear",
     slidesToShow: 1,
