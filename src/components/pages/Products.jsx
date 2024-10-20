@@ -32,7 +32,7 @@ const Products = () => {
     },
     {
       header: "Flour Machinery",
-      image: "/public/Products/Flour_Machinery.png",
+      image: "/Products/Flour_Machinery.png",
       description:
         "Innovative flour machinery designed for precision milling, delivering high-quality output with enhanced automation features.",
     },
