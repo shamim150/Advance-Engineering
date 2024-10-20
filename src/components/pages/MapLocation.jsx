@@ -7,7 +7,7 @@ const MapLocation = () => {
     <Container className='text-center bg-[#F7F9FB] '>
         <TitleHeader headerText='260 Project in Bangladesh'/>
         <div className='flex justify-center items-center'>
-        <img src="/map.png" alt="" />
+        <img className='max-w-[350px] w-full h-auto' src="/map.png" alt="" />
         </div>
     </Container>
   )

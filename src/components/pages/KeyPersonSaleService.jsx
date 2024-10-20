@@ -61,7 +61,7 @@ const KeyPersonSaleService = () => {
               <img
                 src={member.photo}
                 alt={member.name}
-                className="w-full h-48 object-cover"
+                className="w-full max-h-screen object-cover"
               />
               <div className="p-4">
                 <h4 id={`team-member-${index}`} className="text-xl font-semibold text-gray-800 mb-1">{member.name}</h4>

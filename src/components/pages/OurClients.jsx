@@ -4,13 +4,13 @@ import TitleHeader from "../layer/TitleHeader";
 
 const OurClients = () => {
   const clients = [
-    { name: "MGI", initials: "/OurCorporateClients/Mgi.png" },
-    { name: "Akij", initials: "/OurCorporateClients/Akij.png" },
-    { name: "TK", initials: "/OurCorporateClients/TK.jpg" },
-    { name: "Nabil", initials: "/OurCorporateClients/Nabil.png" },
-    { name: "SB", initials: "/OurCorporateClients/SB.jpg" },
-    { name: "Desh Bondho", initials: "/OurCorporateClients/Mgi.png" },
-    { name: "Edrish Group", initials: "/OurCorporateClients/Nabil.png" },
+    { name: "MGI", initials: "/OurCorporateClients/Mgi.jpg", url: "https://www.mgi.org" },
+    { name: "Akij", initials: "/public/OurCorporateClients/AKIJ.jpg", url: "https://www.gulfood.com" },
+    { name: "TK", initials: "/OurCorporateClients/TK.jpg", url: "https://www.tkgroupbd.com" },
+    { name: "Nabil", initials: "/public/OurCorporateClients/Nabil.jpg", url: "	https://ngibd.com" },
+    { name: "SB", initials: "/OurCorporateClients/SB.jpg", url: "https://sbgroup.com.bd" },
+    { name: "Desh Bondho", initials: "/OurCorporateClients/DESHBondhu.jpg", url: "https://www.dbg.com.bd" }, 
+    { name: "Edrish Group", initials: "/OurCorporateClients/Edrish.jpg",  },
   ];
 
   return (
@@ -19,16 +19,19 @@ const OurClients = () => {
 
       <div className="flex flex-wrap justify-center gap-6">
         {clients.map((client, index) => (
-          <div
+          <a
             key={index}
+            href={client.url}
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 hover:shadow-xl w-44 h-44"
           >
-            {/* Placeholder Logo - Client Initials */}
-            <div className=" flex items-center justify-center text-xl font-bold text-white">
-              <img className="rounded-full w-20 h-20 object-cover" src={client.initials} alt="client" />
+            {/* Client Logo */}
+            <div className="flex items-center justify-center text-xl font-bold text-white">
+              <img className="w-20 h-20 object-contain" src={client.initials} alt={client.name} />
             </div>
             <h2 className="text-lg sm:text-xl font-semibold text-gray-800 text-center">{client.name}</h2>
-          </div>
+          </a>
         ))}
       </div>
 
@@ -45,8 +48,8 @@ const OurClients = () => {
           h2 {
             font-size: 1rem; /* Adjust font size for smaller screens */
           }
-          
-          .bg-gray-300 {
+
+          img {
             width: 50px; /* Adjust logo size for smaller screens */
             height: 50px;
           }
@@ -65,7 +68,7 @@ const OurClients = () => {
             font-size: 1.25rem; /* Adjust font size for larger screens */
           }
 
-          .bg-gray-300 {
+          img {
             width: 80px; /* Set fixed logo size for larger screens */
             height: 80px;
           }

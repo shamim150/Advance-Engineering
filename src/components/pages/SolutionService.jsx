@@ -12,7 +12,7 @@ const SolutionService = () => {
           headerText="Our Solution Services"
         />
         <p className="text-center text-gray-600 max-w-3xl mx-auto text-lg leading-relaxed mb-12">
-          At [Your Company Name], we specialize in providing comprehensive solutions for rice mill machinery and parts. Our expert team is dedicated to ensuring that your operations are efficient, reliable, and cost-effective.
+          At Advanced Engineers, we specialize in providing comprehensive solutions for rice mill machinery and parts. Our expert team is dedicated to ensuring that your operations are efficient, reliable, and cost-effective.
         </p>
 
         {/* Service Offerings */}

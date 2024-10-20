@@ -26,116 +26,58 @@
   <body>
     <div id="root"></div>
 
-    <!-- Google translator  -->
-    <!-- <div class="fixed top-[90px] right-0 " id="google_translate_element"></div> -->
+    <!-- google translate -->
 
+    <div id="root"></div>
 
+<!-- Google Translate Element Styling -->
+<style>
+  #google_translate_element {
+    position: absolute; /* Changed to absolute positioning */
+    top: 30px; /* Vertical position */
+    right: 120px; /* Horizontal position */
+    z-index: 1000; /* Ensure it's above other content */
+    background: #fff; /* White background for visibility */
+    padding: 2px 4px; /* Reduced padding for smaller size */
+    border: 1px solid #ccc; /* Subtle border */
+    border-radius: 4px; /* Slightly rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Softer shadow */
+    font-size: 10px; /* Smaller font size */
+    width: 160px; /* Set a specific width */
+    height: 40px; /* Set a specific height */
+    overflow: hidden; /* Hide overflow for a cleaner look */
+  }
+</style>
 
+<!-- Google Translate Element -->
+<div id="google_translate_element"></div>
 
-    <!-- Google Translate -->
-<!-- <div class="translate-container fixed md:top-[90px] top-14  right-0" id="google_translate_container">
-  <div id="google_translate_element"></div>
-</div>
-
+<!-- Google Translate Initialization Script -->
 <script type="text/javascript">
   function googleTranslateElementInit() {
-      new google.translate.TranslateElement({
-          pageLanguage: 'en', // Set the default language of your page
-          layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
-          autoDisplay: false, // Prevent automatic language display
-      }, 'google_translate_element');
+    new google.translate.TranslateElement(
+      {
+        pageLanguage: "en",
+        includedLanguages: "es,fr,de,it,ja,ko,zh-CN", // Supported languages
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE, // Simplified layout
+      },
+      "google_translate_element" // Target element
+    );
   }
 </script>
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script> -->
-<!-- Google Translate -->
+
+<!-- Google Translate API Script -->
+<script
+  type="text/javascript"
+  src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
+></script>
+
+     
+    <!-- google translate -->
 
 
 
 
-
-
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fixed Google Translate Example</title>
-    <style>
-        #google_translate_element {
-            position: fixed;
-            top: 10px; /* Adjust this value to position vertically */
-            right: 10px; /* Adjust this value to position horizontally */
-            z-index: 1000; /* Ensure it stays above other content */
-            background: white; /* Optional: adds a background */
-            padding: 5px; /* Optional: adds some padding */
-            border: 1px solid #ccc; /* Optional: adds a border */
-            border-radius: 4px; /* Optional: rounds corners */
-        }
-    </style>
-</head>
-<body>
-    <div id="google_translate_element"></div>
-
-    <script type="text/javascript">
-        function googleTranslateElementInit() {
-            new google.translate.TranslateElement({
-                pageLanguage: 'en',
-                includedLanguages: 'es,fr,de,it,ja,ko,zh-CN', // List of languages you want to include
-                layout: google.translate.TranslateElement.InlineLayout.SIMPLE
-            }, 'google_translate_element');
-        }
-    </script>
-    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-    
-    Your website content goes here
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    
-
-      // <!-- Google Translate -->
-
-
-
-
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-<!-- Google Translate -->
-
-    <!-- Google translator  -->
-
-    <!-- Google translator -->
-    <script type="text/javascript">
-      function googleTranslateElementInit() {
-        new google.translate.TranslateElement(
-          { pageLanguage: "en" },
-          "google_translate_element"
-        );
-      }
-    </script>
-
-    <script
-      type="text/javascript"
-      src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"
-    ></script>
-    <!-- Google translator -->
 
     <script type="module" src="/src/main.jsx"></script>
   </body>
