@@ -28,7 +28,7 @@ const ConnectWith = () => {
         Maxtherm (Boiler)
         </h2>
       <div className="flex items-center justify-center my-5">
-      <img className="max-w-[700px] h-auto object-cover w-full rounded-xl" src="/public/Homepage/Maxtherm.png" alt="" />
+      <img className="max-w-[700px] h-auto object-cover w-full rounded-xl" src="/Homepage/Maxtherm.png" alt="" />
       </div>
         <p className="text-primary">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
@@ -44,7 +44,7 @@ const ConnectWith = () => {
         Qili (Rice Mill Machinery)
         </h2>
       <div className="flex items-center justify-center my-5">
-      <img className="max-w-[700px] h-auto object-cover w-full rounded-xl" src="/public/Homepage/Qili.jpg" alt="" />
+      <img className="max-w-[700px] h-auto object-cover w-full rounded-xl" src="/Homepage/Qili.jpg" alt="" />
       </div>
         <p className="text-primary">
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores,
