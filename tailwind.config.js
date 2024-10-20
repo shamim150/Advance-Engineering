@@ -16,7 +16,8 @@ export default {
     extend: {
       colors: {
         primary: ' #262626',
-        ptext: '#767676'
+        ptext: '#767676',
+        secondary: '#315be4'
 
       },
     },

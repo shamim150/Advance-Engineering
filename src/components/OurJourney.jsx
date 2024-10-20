@@ -14,7 +14,7 @@ const OurJourney = () => {
             <TitleHeader className='pt-5 text-center' headerText='Our Journey'/>
 
            <div className='py-5 '>
-           <h3 className='text-center text-2xl font-bold mb-3 '>Why Customer Love To <br /> <span className='text-[#ff5e14]'> Choose Us</span>
+           <h3 className='text-center text-2xl font-bold mb-3 '>Why Customer Love To <br /> <span className='text-secondary'> Choose Us</span>
             </h3>
 
           <p className='text-center text-base mb-4'>  There are many variations of passages of Lorem Ipsum typesetting industry has been <br /> the industry's standard dummy text ever since the been when an unknown printer.</p>

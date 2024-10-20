@@ -8,7 +8,7 @@ const ConnectWith = () => {
       <TitleHeader className='text-center' headerText='Connect with Advance Engineers' />
     
       <div className=" text-center cursor-pointer mt-5">
-        <h2 className="text-2xl font-bold font-DM text-[#ff5e14] ">
+        <h2 className="text-2xl font-bold font-DM text-secondary ">
           Induss (Pioneerin Perboling & Drier Technology)
         </h2>
       <div className="flex items-center justify-center my-5">
@@ -24,7 +24,7 @@ const ConnectWith = () => {
         </p>
       </div>
       <div className=" text-center cursor-pointer mt-5">
-        <h2 className="text-2xl font-bold font-DM text-[#ff5e14] ">
+        <h2 className="text-2xl font-bold font-DM text-secondary">
         Maxtherm (Boiler)
         </h2>
       <div className="flex items-center justify-center my-5">
@@ -40,7 +40,7 @@ const ConnectWith = () => {
         </p>
       </div>
       <div className=" text-center cursor-pointer mt-5">
-        <h2 className="text-2xl font-bold font-DM text-[#ff5e14] ">
+        <h2 className="text-2xl font-bold font-DM text-secondary ">
         Qili (Rice Mill Machinery)
         </h2>
       <div className="flex items-center justify-center my-5">

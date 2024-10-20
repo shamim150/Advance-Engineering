@@ -15,7 +15,7 @@ const Footer = () => {
           {/* Column 1 */}
           <div className="col-span-2 space-y-4">
             <h2 className="font-bold text-primary text-xl font-DM leading-6">
-              Advance Engineering
+              Advanced Engineers
             </h2>
             <p className="font-bold text-[#6D6D6D] text-sm">
               Head Office:- Rustom Plaza (1st Floor) Supari Patty, Naogaon-6500,
