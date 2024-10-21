@@ -148,11 +148,10 @@ const Footer = () => {
                 ></textarea>
               </div>
 
-              <button className="relative inline-flex items-center justify-center px-6 py-3 font-medium transition-all bg-secondary text-white rounded-lg hover:bg-white hover:text-black">
+              <button className="relative inline-flex items-center justify-center px-6 py-3 font-medium transition-all bg-secondary text-white rounded-lg hover:bg-white hover:text-black duration-500">
                
-                <span className="relative z-10 text-base font-semibold text-black transition-all group-hover:text-white">
                   Submit
-                </span>
+              
               </button>
             </form>
           </div>
