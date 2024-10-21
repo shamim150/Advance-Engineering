@@ -8,7 +8,7 @@ import { FaFacebook, FaLinkedinIn } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="bg-[#f7f7f8] relative">
+    <div className="bg-[#f7f7f8] relative pb-10">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-6 gap-10 pt-10">
           {/* Column 1 */}
