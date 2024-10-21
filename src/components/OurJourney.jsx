@@ -23,12 +23,12 @@ const OurJourney = () => {
 
             <div className='flex justify-center items-center'>
             {/* <img className='w-full h-full object-cover' src={'/OurJourney/product_2.jpg'} alt="" /> */}
-            <img className='max-w-[700px] h-auto object-cover w-full ' src={'/OurJourney/product_1.jpg'} alt="" />
+            <img className='max-w-[700px] h-auto object-cover w-full ' src={'/Homepage/product_1.jpg'} alt="" />
             </div>
 
 
             
-        </Container>
+        </Container> 
     </div>
   )
 }

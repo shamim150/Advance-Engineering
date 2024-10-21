@@ -91,16 +91,7 @@ const AboutUs = () => {
           </div>
         </div>
 
-        {/* Call to Action */}
-        {/* <div className="mt-24 text-center">
-          <a
-            href="/contact"
-            className="inline-block px-8 py-3 text-lg font-medium text-white bg-[#32438c] rounded-md hover:bg-yellow-600"
-          >
-            Get in Touch
-          </a>
-        </div> */}
-      </div>
+          </div>
     </section>
       </Container>
       
