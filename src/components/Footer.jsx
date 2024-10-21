@@ -91,7 +91,7 @@ const Footer = () => {
             <h2 className="font-bold text-primary text-xl font-DM leading-6">
               Quick Contact Us
             </h2>
-            <form className="bg-[#d0d0d6] py-5 px-4 rounded-xl space-y-3">
+            <form className="bg-[#d0d0d6] py-5 px-4 rounded-xl space-y-3 shadow-2xl">
               <div>
                 <label
                   className="font-bold text-[#6D6D6D] inline-block w-[80px]"
@@ -148,7 +148,7 @@ const Footer = () => {
                 ></textarea>
               </div>
 
-              <button className="relative inline-flex items-center justify-center px-6 py-3 font-medium transition-all bg-indigo-100 rounded-lg hover:bg-white group">
+              <button className="relative inline-flex items-center justify-center px-6 py-3 font-medium transition-all bg-secondary text-white rounded-lg hover:bg-white hover:text-black">
                
                 <span className="relative z-10 text-base font-semibold text-black transition-all group-hover:text-white">
                   Submit
