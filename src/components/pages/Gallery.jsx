@@ -55,8 +55,8 @@ const Gallery = () => {
               key={tab}
               onClick={() => setActiveTab(tab)}
               className={`px-4 py-2 rounded-lg font-semibold ${
-                activeTab === tab ? "bg-green-600 text-white" : "bg-white text-gray-700"
-              } shadow transition duration-300 hover:bg-green-500 hover:text-white`}
+                activeTab === tab ? "bg-secondary text-white" : "bg-white text-gray-700"
+              } shadow transition duration-300 hover:text-white  hover:bg-secondary`}
             >
               {tab.charAt(0).toUpperCase() + tab.slice(1).replace(/([A-Z])/g, ' $1')}
             </button>

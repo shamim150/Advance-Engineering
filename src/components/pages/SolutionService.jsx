@@ -27,7 +27,7 @@ const SolutionService = () => {
               <div className="bg-gray-200 p-4 text-center">
                 <a
                   href="#"
-                  className="text-green-600 font-bold hover:underline"
+                  className="text-secondary font-bold hover:underline"
                 >
                   Learn More &rarr;
                 </a>
@@ -44,7 +44,7 @@ const SolutionService = () => {
           </p>
           <a
             href="#"
-            className="mt-6 inline-block bg-green-600 text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-green-700 transition duration-300"
+            className="mt-6 inline-block bg-secondary text-white font-semibold py-3 px-6 rounded-lg shadow-md hover:bg-white hover:text-black hover:shadow-xl  transition duration-300"
           >
             Get in Touch
           </a>

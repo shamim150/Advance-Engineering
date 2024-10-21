@@ -15,7 +15,7 @@ const AuthorizedSales = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Header Section */}
         <div className="text-center">
-          <h2 className="text-xl font-bold  tracking-wider text-[#32438c] uppercase">Our Partners</h2>
+          <h2 className="text-xl font-bold  tracking-wider text-secondary uppercase">Our Partners</h2>
           <p className="mt-4 text-4xl font-extrabold text-gray-900 sm:text-5xl">
             Trusted Authorized Partners
           </p>
@@ -36,7 +36,7 @@ const AuthorizedSales = () => {
               <div className="w-32 h-32 sm:w-40 sm:h-40 bg-white shadow-md p-4 rounded-full overflow-hidden flex items-center justify-center group-hover:shadow-lg transition duration-300 ease-in-out">
                 <img src={partner.logo} alt={`${partner.name} Logo`} className="max-w-full max-h-full rounded-full" />
               </div>
-              <h3 className="mt-6 text-lg sm:text-xl font-semibold text-gray-900">{partner.name}</h3>
+              <h3 className="mt-6 text-lg sm:text-xl font-semibold text-secondary">{partner.name}</h3>
             </Link>
           ))}
         </div>
@@ -50,7 +50,7 @@ const AuthorizedSales = () => {
         <div className="mt-12 text-center">
           <a
             href="/contact"
-            className="inline-block px-8 py-3 text-lg font-medium text-white bg-[#32438c] rounded-full shadow-md hover:bg-green-700 hover:shadow-lg transition duration-300 ease-in-out"
+            className="inline-block px-8 py-3 text-lg font-medium text-white bg-secondary rounded-full shadow-md hover:bg-white hover:text-black hover:shadow-lg transition duration-300 ease-in-out"
           >
             Become a Partner
           </a>
