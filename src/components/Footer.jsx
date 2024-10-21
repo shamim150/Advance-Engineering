@@ -2,11 +2,9 @@
 import React from "react";
 import Container from "./layer/Container";
 import { Link } from "react-router-dom";
-import { RiFacebookLine } from "react-icons/ri";
 import { AiOutlineInstagram } from "react-icons/ai";
-import { FaFacebook, FaFacebookF, FaLinkedinIn } from "react-icons/fa";
 import TitleHeader from "./layer/TitleHeader";
-import { BsFacebook } from "react-icons/bs";
+import { FaFacebook, FaLinkedinIn } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -44,15 +42,15 @@ const Footer = () => {
               company.com
             </a>
 
-            <TitleHeader className="text-xl pt-5" headerText="Follow Us" />
+            <TitleHeader className="text-xl pt-3 text-secondary" headerText="Follow Us" />
             <div className="flex items-center gap-3">
-              <Link className="p-2  bg-black rounded-full hover:bg-secondary transition-all duration-500" to="Advance Engineering" target="_blank">
-              <FaFacebookF  className="text-white size-6 " /> 
+              <Link className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500" to="Advance Engineering" target="_blank">
+              <FaFacebook  className="text-white size-6 " /> 
               </Link>
-              <Link className="p-2  bg-black rounded-full hover:bg-secondary transition-all duration-500" to="/">
+              <Link className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500" to="/">
                 <AiOutlineInstagram className="text-white size-6 " />
               </Link>
-              <Link className="p-2  bg-black rounded-full hover:bg-secondary transition-all duration-500" to="/">
+              <Link className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500" to="/">
                 <FaLinkedinIn className="text-white size-6  " />
               </Link>
             </div>
