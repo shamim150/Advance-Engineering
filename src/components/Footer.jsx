@@ -47,12 +47,12 @@ const Footer = () => {
               <Link className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500" to="Advance Engineering" target="_blank">
               <FaFacebook  className="text-white size-6 " /> 
               </Link>
-              <Link className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500" to="/">
+              {/* <Link className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500" to="/">
                 <AiOutlineInstagram className="text-white size-6 " />
               </Link>
               <Link className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500" to="/">
                 <FaLinkedinIn className="text-white size-6  " />
-              </Link>
+              </Link> */}
             </div>
           </div>
 
