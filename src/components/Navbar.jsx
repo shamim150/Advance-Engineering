@@ -25,7 +25,7 @@ export const Navbar = () => {
 
         {/* Menu items */}
         <ul
-          className={`text-center transition-transform duration-300 ease-in-out flex md:flex-row flex-col bg-slate-300 md:bg-transparent absolute top-full left-0 md:static w-full md:w-auto p-2 md:p-0 transform ${
+          className={`text-center transition-transform duration-300 ease-in-out flex md:flex-row flex-col bg-slate-300 md:bg-transparent absolute top-[99%] left-0 md:static w-full md:w-auto p-2 md:p-0 transform ${
             show ? "translate-x-0 z-40" : "-translate-x-full"
           } md:transform-none md:flex md:z-auto`}
         >
