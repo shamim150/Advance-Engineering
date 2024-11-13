@@ -6,7 +6,7 @@ import { Navbar } from '../Navbar'
 
 const RootLayOut = () => {
   return (
-    <div>
+    <div className='overflow-hidden'>
         <Navbar/> 
  
 
