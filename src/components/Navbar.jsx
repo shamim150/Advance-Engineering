@@ -10,7 +10,7 @@ export const Navbar = () => {
   const [show, setShow] = useState(false); // Manage the state of the mobile menu
 
   return (
-    <nav className="z-10 sticky top-0 bg-slate-100">
+    <nav className="z-10 fixed w-full top-0 bg-slate-100 ">
       <Container className="relative flex items-center justify-between gap-5 lg:gap-0 lg:py-6 py-4 px-3 lg:px-0">
         
         {/* Logo */}

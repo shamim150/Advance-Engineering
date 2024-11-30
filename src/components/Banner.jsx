@@ -25,7 +25,6 @@ const Banner = () => {
     appendDots: (dots) => (
       <div
         style={{
-          // backgroundColor: "red",
           borderRadius: "10px",
           padding: "10px",
           position: "absolute",

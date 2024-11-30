@@ -1,4 +1,3 @@
-
 import React from "react";
 import Container from "./layer/Container";
 import { Link } from "react-router-dom";
@@ -8,7 +7,7 @@ import { FaFacebook, FaLinkedinIn } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="bg-[#f7f7f8] relative pb-10">
+    <div className="bg-[#f7f7f8]  pb-10">
       <Container>
         <div className="grid grid-cols-1 md:grid-cols-6 gap-10 pt-10">
           {/* Column 1 */}
@@ -42,17 +41,36 @@ const Footer = () => {
               advanced_engrs@yahoo.com
             </a>
 
-            <TitleHeader className="text-xl pt-3 text-secondary" headerText="Follow Us" />
+            <TitleHeader
+              className="text-xl pt-3 text-secondary"
+              headerText="Follow Us"
+            />
             <div className="flex items-center gap-3">
-              <Link className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500" to="Advance Engineering" target="_blank">
-              <FaFacebook  className="text-white size-6 " /> 
+              <Link
+                className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500"
+                to="Advance Engineering"
+                target="_blank"
+              >
+                <FaFacebook className="text-white size-6 " />
               </Link>
-              {/* <Link className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500" to="/">
+              <Link
+                className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500"
+                to="/"
+              >
                 <AiOutlineInstagram className="text-white size-6 " />
               </Link>
-              <Link className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500" to="/">
+              {/* <Link className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500" to="/">
                 <FaLinkedinIn className="text-white size-6  " />
               </Link> */}
+
+              <a
+                href="https://www.linkedin.com/me?trk=p_mwlite_feed-secondary_nav" // Replace with your LinkedIn URL
+                target="_blank"
+                rel="noopener noreferrer"
+                className="p-2 bg-ptext rounded-full hover:bg-secondary transition-all duration-500"
+              >
+                <FaLinkedinIn className="text-white size-6" />
+              </a>
             </div>
           </div>
 
@@ -149,9 +167,7 @@ const Footer = () => {
               </div>
 
               <button className="relative inline-flex items-center justify-center px-6 py-3 font-medium transition-all bg-secondary text-white rounded-lg hover:bg-white hover:text-black duration-500">
-               
-                  Submit
-              
+                Submit
               </button>
             </form>
           </div>
@@ -162,7 +178,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-
-
-
