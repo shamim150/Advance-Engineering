@@ -12,7 +12,7 @@ const RootLayOut = () => {
         to="https://wa.me/+8801717507404?text=Hello"
         target="_blank"
       >
-        <img className="size-10 md:size-14" src="/public/whatsapp.gif" alt="whatsapp" />
+        <img className="size-10 md:size-14" src="/whatsapp.gif" alt="whatsapp" />
       </Link>
 
       <Navbar />
