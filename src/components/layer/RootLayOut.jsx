@@ -16,7 +16,9 @@ const RootLayOut = () => {
       </Link>
 
       <Navbar />
-      <Outlet />
+    <div className="md:pt-10">
+    <Outlet />
+    </div>
       <Footer />
     </div>
   );
