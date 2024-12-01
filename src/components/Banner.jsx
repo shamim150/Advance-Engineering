@@ -1,9 +1,6 @@
 import React, { useState } from "react";
 import Slider from "react-slick";
 import Image from "./layer/Image";
-import { PiNumberTwoBold } from "react-icons/pi";
-import { FaTruck } from "react-icons/fa";
-import { FaArrowRotateLeft } from "react-icons/fa6";
 import Container from "./layer/Container";
 
 const Banner = () => {
@@ -106,19 +103,19 @@ const Banner = () => {
       <div className="hover:scale-100 ">
         <Slider {...settings}>
           <Image
-            imageClass="w-full md:h-[60vh] h-[30vh] object-cover"
+            imageClass="w-full md:h-[60vh] sm:h-[60vh]  h-[30vh] object-cover"
             scr="/Slidder/Slider_1.jpg"
           />
           <Image
-            imageClass="w-full md:h-[60vh] h-[30vh] object-cover"
+            imageClass="w-full md:h-[60vh] sm:h-[60vh]  h-[30vh] object-cover"
             scr="/Slidder/Slider_2.jpg"
           />
           <Image
-            imageClass="w-full md:h-[60vh] h-[30vh] object-cover"
+            imageClass="w-full md:h-[60vh] sm:h-[60vh]  h-[30vh] object-cover"
             scr="/Slidder/Slider_3.jpg"
           />
           <Image
-            imageClass="w-full md:h-[60vh] h-[30vh] object-cover"
+            imageClass="w-full md:h-[60vh] sm:h-[60vh]  h-[30vh] object-cover"
             scr="/Slidder/Slider_4.jpg"
           />
         </Slider>
