@@ -38,7 +38,7 @@ const Footer = () => {
               className="text-sm font-bold text-[#6D6D6D] block"
               href="mailto:advanced_engrs@yahoo.com"
             >
-              advanced_engrs@yahoo.com
+              info@advancedengrs.com
             </a>
 
             <TitleHeader
