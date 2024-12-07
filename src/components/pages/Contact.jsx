@@ -34,6 +34,18 @@ const Contact = () => {
                 />
               </div>
               <div className="mb-4">
+                <label className="block text-gray-700" htmlFor="Address">
+                Address
+                </label>
+                <input
+                  type="text"
+                  id="Address"
+                  className="mt-1 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-400"
+                  required
+                  placeholder="Address"
+                />
+              </div>
+              <div className="mb-4">
                 <label className="block text-gray-700" htmlFor="email">
                   Email
                 </label>
@@ -47,7 +59,7 @@ const Contact = () => {
               </div>
               <div className="mb-4">
                 <label className="block text-gray-700" htmlFor="message">
-                  Message
+                Requirement
                 </label>
                 <textarea
                   id="message"
@@ -70,24 +82,25 @@ const Contact = () => {
           <div className="flex-1 bg-white rounded-lg shadow-lg p-8">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <p className="text-gray-700 mb-4">
-              <strong>Address:</strong> 123 Engineering Ave, City, Country
+              <strong>Address:</strong> <br /> Head Office:- Rustom Plaza (1st Floor) Supari Patty, <br /> Naogaon-6500, Bangladesh
             </p>
+            <p className="mb-3">Dhaka Office:- Sector-09, Road-3F, House-18, Uttara, Dhaka-1230.</p>
             <p className="text-gray-700 mb-4">
-              <strong>Phone:</strong>{" "}
+              <strong> Mobile:</strong>{" "}
               <a
-                href="tel:+1234567890"
+                href="tel:+8801717507404"
                 className="text-green-600 hover:underline"
               >
-                +123 456 7890
+                +8801717507404
               </a>
             </p>
             <p className="text-gray-700 mb-4">
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:info@example.com"
+                href="mailto:info@advancedengrs.com"
                 className="text-green-600 hover:underline"
               >
-                info@example.com
+                info@advancedengrs.com
               </a>
             </p>
           </div>
