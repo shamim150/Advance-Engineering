@@ -48,10 +48,10 @@ const Footer = () => {
             <div className="flex items-center gap-3">
               <Link
                 className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500"
-                to="Advance Engineering"
+                to="https://www.facebook.com/advancedengrs/"
                 target="_blank"
               >
-                <FaFacebook className="text-white size-6 " />
+                <FaFacebook className="text-white size-6"/>
               </Link>
               <Link
                 className="p-2  bg-ptext rounded-full hover:bg-secondary transition-all duration-500"
