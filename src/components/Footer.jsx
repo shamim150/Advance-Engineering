@@ -93,7 +93,7 @@ const Footer = () => {
                 <Link to="/">Sister Concern (Naogaon Impex)</Link>
               </li>
               <li>
-                <Link to="/">Career and News</Link>
+                <Link to="/">Carrier and News</Link>
               </li>
               <li>
                 <Link to="/">Managing Director</Link>
