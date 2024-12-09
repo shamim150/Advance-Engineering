@@ -17,6 +17,8 @@ import AuthorizedSales from './components/pages/AuthorizedSales';
 import SolutionService from './components/pages/SolutionService';
 import Gallery from './components/pages/Gallery';
 import KeyPersonSaleService from './components/pages/KeyPersonSaleService';
+import Carrier from './components/pages/Carrier';
+import JobDetails from './components/pages/JobDetails';
 
 const router = createBrowserRouter(
   createRoutesFromElements(
@@ -30,6 +32,8 @@ const router = createBrowserRouter(
       <Route path='/gallery' element = {<Gallery/>}> </Route>
       <Route path='/keyperson' element = {<KeyPersonSaleService/>}> </Route>
       <Route path='/contact' element = {<Contact/>}> </Route>
+      <Route path='/carrier' element = {<Carrier/>}> </Route>
+      <Route path='/carrier/:id' element = {<JobDetails/>}> </Route>
       
       
     </Route>

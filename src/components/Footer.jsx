@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Container from "./layer/Container";
 import { Link } from "react-router-dom";
 import { AiOutlineInstagram } from "react-icons/ai";
@@ -6,6 +6,55 @@ import TitleHeader from "./layer/TitleHeader";
 import { FaFacebook, FaLinkedinIn } from "react-icons/fa6";
 
 const Footer = () => {
+
+  const [name, setName] = useState("");
+  const [address, setAddress] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handlesubmit = async (e) => {
+    e.preventDefault();
+
+    const fromData = { name, address, email, message };
+    console.log(fromData);
+
+    try {
+      const response = await fetch(
+        "https://advanced-engineering-admin.vercel.app/api/v1/contactUs/contact",
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(fromData),
+        }
+      );
+
+      const data = await response.json();
+
+      if (data?.success) {
+        alert("Message sent successfully!");
+        setName("");
+        setAddress("");
+        setEmail("");
+        setMessage("");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
+
+
+
+
+
+
+
+
+
+
+
   return (
     <div className="bg-[#f7f7f8]  pb-10">
       <Container>
@@ -93,7 +142,7 @@ const Footer = () => {
                 <Link to="/">Sister Concern (Naogaon Impex)</Link>
               </li>
               <li>
-                <Link to="/">Carrier and News</Link>
+                <Link to="/carrier">Carrier and News</Link>
               </li>
               <li>
                 <Link to="/">Managing Director</Link>
@@ -109,7 +158,7 @@ const Footer = () => {
             <h2 className="font-bold text-primary text-xl font-DM leading-6">
               Quick Contact Us
             </h2>
-            <form className="bg-[#d0d0d6] py-5 px-4 rounded-xl space-y-3 shadow-2xl">
+            <form onSubmit={handlesubmit} className="bg-[#d0d0d6] py-5 px-4 rounded-xl space-y-3 shadow-2xl">
               <div>
                 <label
                   className="font-bold text-[#6D6D6D] inline-block w-[80px]"
@@ -122,6 +171,8 @@ const Footer = () => {
                   type="text"
                   id="name"
                   placeholder="Enter Your Name"
+                  value={name}
+                  onChange={(e)=> setName(e.target.value) }
                 />
               </div>
 
@@ -137,6 +188,8 @@ const Footer = () => {
                   type="text"
                   id="add"
                   placeholder="Enter Your Address"
+                  value={address}
+                  onChange={(e)=> setAddress(e.target.value)}
                 />
               </div>
 
@@ -152,6 +205,8 @@ const Footer = () => {
                   type="email"
                   id="email"
                   placeholder="Enter Your E-mail"
+                  value={email}
+                  onChange={(e)=> setEmail(e.target.value)}
                 />
               </div>
 
@@ -163,6 +218,8 @@ const Footer = () => {
                   className="w-full h-[50px] py-2 px-4 rounded-lg"
                   id="text"
                   placeholder="Enter your requirement"
+                  value={message}
+                  onChange={(e)=> setMessage(e.target.value)}
                 ></textarea>
               </div>
 

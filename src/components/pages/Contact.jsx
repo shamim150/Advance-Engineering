@@ -1,8 +1,45 @@
-import React from "react";
+import  { useState } from "react";
 import TitleHeader from "../layer/TitleHeader";
 import Container from "../layer/Container";
 
 const Contact = () => {
+  const [name, setName] = useState("");
+  const [address, setAddress] = useState("");
+  const [email, setEmail] = useState("");
+  const [message, setMessage] = useState("");
+
+  const handlesubmit = async (e) => {
+    e.preventDefault();
+
+    const fromData = { name, address, email, message };
+    console.log(fromData);
+
+    try {
+      const response = await fetch(
+        "https://advanced-engineering-admin.vercel.app/api/v1/contactUs/contact",
+        {
+          method: "POST",
+          headers: {
+            "content-type": "application/json",
+          },
+          body: JSON.stringify(fromData),
+        }
+      );
+
+      const data = await response.json();
+
+      if (data?.success) {
+        alert("Message sent successfully!");
+        setName("");
+        setAddress("");
+        setEmail("");
+        setMessage("");
+      }
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   return (
     <div className="bg-gray-100 py-20">
       <Container>
@@ -20,7 +57,7 @@ const Contact = () => {
         <div className="flex flex-col md:flex-row md:space-x-8">
           <div className="flex-1 bg-white rounded-lg shadow-lg p-8 mb-8 md:mb-0">
             <h3 className="text-2xl font-semibold mb-6">Get in Touch</h3>
-            <form>
+            <form onSubmit={handlesubmit}>
               <div className="mb-4">
                 <label className="block text-gray-700" htmlFor="name">
                   Name
@@ -31,11 +68,13 @@ const Contact = () => {
                   className="mt-1 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-400"
                   required
                   placeholder="Your Name"
+                  value={name}
+                  onChange={(e) => setName(e.target.value)}
                 />
               </div>
               <div className="mb-4">
                 <label className="block text-gray-700" htmlFor="Address">
-                Address
+                  Address
                 </label>
                 <input
                   type="text"
@@ -43,6 +82,8 @@ const Contact = () => {
                   className="mt-1 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-400"
                   required
                   placeholder="Address"
+                  value={address}
+                  onChange={(e) => setAddress(e.target.value)}
                 />
               </div>
               <div className="mb-4">
@@ -55,11 +96,13 @@ const Contact = () => {
                   className="mt-1 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-400"
                   required
                   placeholder="Your Email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
                 />
               </div>
               <div className="mb-4">
                 <label className="block text-gray-700" htmlFor="message">
-                Requirement
+                  Requirement
                 </label>
                 <textarea
                   id="message"
@@ -67,6 +110,8 @@ const Contact = () => {
                   className="mt-1 p-2 border border-gray-300 rounded w-full focus:outline-none focus:ring-2 focus:ring-green-400"
                   required
                   placeholder="Your Message"
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
                 ></textarea>
               </div>
               <button
@@ -82,9 +127,12 @@ const Contact = () => {
           <div className="flex-1 bg-white rounded-lg shadow-lg p-8">
             <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
             <p className="text-gray-700 mb-4">
-              <strong>Address:</strong> <br /> Head Office:- Rustom Plaza (1st Floor) Supari Patty, <br /> Naogaon-6500, Bangladesh
+              <strong>Address:</strong> <br /> Head Office:- Rustom Plaza (1st
+              Floor) Supari Patty, <br /> Naogaon-6500, Bangladesh
             </p>
-            <p className="mb-3">Dhaka Office:- Sector-09, Road-3F, House-18, Uttara, Dhaka-1230.</p>
+            <p className="mb-3">
+              Dhaka Office:- Sector-09, Road-3F, House-18, Uttara, Dhaka-1230.
+            </p>
             <p className="text-gray-700 mb-4">
               <strong> Mobile:</strong>{" "}
               <a
