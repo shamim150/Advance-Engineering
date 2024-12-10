@@ -43,7 +43,7 @@ export const Navbar = () => {
 
         {/* Menu items */}
         <ul
-          className={`  text-center gap-2  justify-between transition-transform duration-300 ease-in-out flex xl:flex-row flex-col bg-slate-300 xl:bg-transparent absolute top-[99%] left-0 xl:static w-full xl:w-auto p-2 xl:p-1 transform ${
+          className={`  text-center gap-1 md:gap-2  justify-between transition-transform duration-300 ease-in-out flex xl:flex-row flex-col bg-slate-300 xl:bg-transparent absolute top-[99%] left-0 xl:static w-full xl:w-auto p-2 xl:p-1 transform ${
             show ? "translate-x-0 z-40" : "translate-x-full"
           } xl:transform-none xl:flex xl:z-auto`}
         >
@@ -109,7 +109,7 @@ export const Navbar = () => {
           </div>
 
           <div
-            className={`absolute max-h-[800px] overflow-hidden overflow-y-scroll top-32 left-1/2 -translate-x-1/2 mx-auto bg-gray-200 p-5 rounded-2xl max-w-full w-full  transition-all duration-500 ${
+            className={`absolute max-sm:top-[270px] max-h-[800px] overflow-hidden overflow-y-scroll top-32 left-1/2 -translate-x-1/2 mx-auto bg-gray-200 p-5 rounded-2xl max-w-full w-full  transition-all duration-500 ${
               search ? "" : "hidden"
             }`}
           >
