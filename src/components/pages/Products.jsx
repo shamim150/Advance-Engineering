@@ -86,14 +86,14 @@ const Products = () => {
               </div>
 
               {/* Call to Action */}
-              <div className="p-8 pt-0">
+              {/* <div className="p-8 pt-0">
                 <Link
                   href="#"
                   className="inline-block text-blue-400 hover:text-secondary font-medium hover:underline transition-colors"
                 >
                   Learn More &rarr;
                 </Link>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
