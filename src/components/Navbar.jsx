@@ -109,7 +109,7 @@ export const Navbar = () => {
           </div>
 
           <div
-            className={`absolute max-sm:top-[270px] max-h-[800px] overflow-hidden overflow-y-scroll top-32 left-1/2 -translate-x-1/2 mx-auto bg-gray-200 p-5 rounded-2xl max-w-full w-full  transition-all duration-500 ${
+            className={`absolute max-sm:top-[238px] max-h-[800px] overflow-hidden overflow-y-scroll top-32 left-1/2 -translate-x-1/2 mx-auto bg-gray-200 p-5 rounded-2xl max-w-full w-full  transition-all duration-500 ${
               search ? "" : "hidden"
             }`}
           >
