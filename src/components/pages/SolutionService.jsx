@@ -24,14 +24,14 @@ const SolutionService = () => {
                 <h3 className="text-2xl font-semibold text-gray-800">{service.title}</h3>
                 <p className="mt-2 text-gray-600">{service.description}</p>
               </div>
-              <div className="bg-gray-200 p-4 text-center">
+              {/* <div className="bg-gray-200 p-4 text-center">
                 <a
                   href="#"
                   className="text-secondary font-bold hover:underline"
                 >
                   Learn More &rarr;
                 </a>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>
