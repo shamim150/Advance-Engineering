@@ -109,11 +109,11 @@ export const Navbar = () => {
           </div>
 
           <div
-            className={`absolute top-32 left-1/2 -translate-x-1/2 mx-auto bg-red-200 p-5 rounded-2xl max-w-full w-full  transition-all duration-500 ${
+            className={`absolute max-h-[800px] overflow-hidden overflow-y-scroll top-32 left-1/2 -translate-x-1/2 mx-auto bg-red-200 p-5 rounded-2xl max-w-full w-full  transition-all duration-500 ${
               search ? "" : "hidden"
             }`}
           >
-            <div className="flex gap-4 ">
+            <div className="grid lg:grid-cols-4 grid-cols-1  gap-4  ">
               {filterData?.length > 0 ? (
                 filterData.map((product, index) => (
                   <div
