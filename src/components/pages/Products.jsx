@@ -4,47 +4,57 @@ import TitleHeader from "../layer/TitleHeader";
 import Container from "../layer/Container";
 import { Link } from "react-router-dom";
 
+export const products = [
+  {
+    header: "Dryers and Parboiling",
+    image: "/Products/Dryers_and_Parboiling.jpg",
+    description:
+      "High-efficiency dryers and parboiling systems designed for maximum throughput and energy savings in rice milling operations.",
+  },
+  {
+    header: "Boiler",
+    image: "/Products/Boiler.jpg",
+    description:
+      "Advanced boiler systems for industrial applications, converting fuel into heat for process industries and steam generation.",
+  },
+  {
+    header: "Continuous Cooker",
+    image: "/Products/Continuous_Cooker.jpg",
+    description:
+      "Efficient industrial-scale continuous cookers for high-speed processing, ensuring quality and consistency in large production.",
+  },
+  {
+    header: "Furnace",
+    image: "/Products/Furnace.jpg",
+    description:
+      "Modern furnace systems with advanced heat distribution, ideal for use in industrial settings requiring high-temperature processing.",
+  },
+  {
+    header: "Flour Machinery",
+    image: "/Products/Flour_Machinery.png",
+    description:
+      "Innovative flour machinery designed for precision milling, delivering high-quality output with enhanced automation features.",
+  },
+  {
+    header: "Oil Mill Machinery with Refine System",
+    image: "/Products/Parts.jpg",
+    description:
+      "State-of-the-art oil mill machinery paired with a refine system for efficient oil extraction and purification processes.",
+  },
+  
+  
+];
+
 const Products = () => {
-  const products = [
-    {
-      header: "Dryers and Parboiling",
-      image: "/Products/Dryers_and_Parboiling.jpg",
-      description:
-        "High-efficiency dryers and parboiling systems designed for maximum throughput and energy savings in rice milling operations.",
-    },
-    {
-      header: "Boiler",
-      image: "/Products/Boiler.jpg",
-      description:
-        "Advanced boiler systems for industrial applications, converting fuel into heat for process industries and steam generation.",
-    },
-    {
-      header: "Continuous Cooker",
-      image: "/Products/Continuous_Cooker.jpg",
-      description:
-        "Efficient industrial-scale continuous cookers for high-speed processing, ensuring quality and consistency in large production.",
-    },
-    {
-      header: "Furnace",
-      image: "/Products/Furnace.jpg",
-      description:
-        "Modern furnace systems with advanced heat distribution, ideal for use in industrial settings requiring high-temperature processing.",
-    },
-    {
-      header: "Flour Machinery",
-      image: "/Products/Flour_Machinery.png",
-      description:
-        "Innovative flour machinery designed for precision milling, delivering high-quality output with enhanced automation features.",
-    },
-    {
-      header: "Oil Mill Machinery with Refine System",
-      image: "/Products/Parts.jpg",
-      description:
-        "State-of-the-art oil mill machinery paired with a refine system for efficient oil extraction and purification processes.",
-    },
-    
-    
-  ];
+
+
+
+
+
+
+
+  
+ 
 
   return (
     <div className="bg-gray-50 py-20">
