@@ -11,13 +11,14 @@ const OurClients = () => {
     { name: "SB", initials: "/OurCorporateClients/SB.jpg", url: "https://sbgroup.com.bd" },
     { name: "Desh Bondho", initials: "/OurCorporateClients/DESHBondhu.jpg", url: "https://www.dbg.com.bd" }, 
     { name: "Edrish Group", initials: "/OurCorporateClients/Edrish.jpg",  },
+    { name: "Safar Group", initials: "/OurCorporateClients/safarGroup.png",  },
   ];
 
   return (
     <Container className="bg-[#F7F9FB] py-10">
       <TitleHeader className="text-center mb-8 text-3xl font-bold text-gray-700" headerText="Our Corporate Clients" />
 
-      <div className="flex flex-wrap justify-center gap-6">
+      <div className="flex flex-wrap justify-center gap-10">
         {clients.map((client, index) => (
           <a
             key={index}
@@ -27,7 +28,7 @@ const OurClients = () => {
             className="bg-white rounded-lg shadow-md p-6 flex flex-col items-center justify-center transition-transform duration-300 hover:scale-105 hover:shadow-xl w-44 h-44"
           >
             {/* Client Logo */}
-            <div className="flex items-center justify-center text-xl font-bold text-white">
+            <div className="flex items-center justify-center text-xl font-semibold text-white">
               <img className="w-20 h-20 object-contain" src={client.initials} alt={client.name} />
             </div>
             <h2 className="text-lg sm:text-xl font-semibold text-gray-800 text-center">{client.name}</h2>
