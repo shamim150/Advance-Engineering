@@ -28,6 +28,10 @@ export const Navbar = () => {
     }
   }, [search]);
 
+  const handleClearSearch = () => {
+    setSearch("");
+  };
+
   return (
     <nav className="z-10 fixed w-full top-0 bg-slate-100 ">
       <Container className="relative flex items-center justify-between gap-5 xl:gap-0 xl:py-6 py-4 px-3 xl:px-0">
@@ -48,49 +52,73 @@ export const Navbar = () => {
           } xl:transform-none xl:flex xl:z-auto`}
         >
           <Li
-            onclick={() => setShow(!show)}
+            onclick={() => {
+              setShow(!show);
+              handleClearSearch();
+            }}
             to={"/"}
             className="text-primary"
             liText="Home"
           />
           <Li
-            onclick={() => setShow(!show)}
+            onclick={() => {
+              setShow(!show);
+              handleClearSearch();
+            }}
             to={"/aboutus"}
             liText="About Us"
             iconName={<FaAngleDown />}
           />
           <Li
-            onclick={() => setShow(!show)}
+            onclick={() => {
+              setShow(!show);
+              handleClearSearch();
+            }}
             to={"/products"}
             liText="Products"
             iconName={<FaAngleDown />}
           />
           <Li
-            onclick={() => setShow(!show)}
+            onclick={() => {
+              setShow(!show);
+              handleClearSearch();
+            }}
             to={"/authorized"}
             liText="Authorized Partner"
             iconName={<FaAngleDown />}
           />
           <Li
-            onclick={() => setShow(!show)}
+            onclick={() => {
+              setShow(!show);
+              handleClearSearch();
+            }}
             to={"/solutionservice"}
             liText="Solution & Service"
             iconName={<FaAngleDown />}
           />
           <Li
-            onclick={() => setShow(!show)}
+            onclick={() => {
+              setShow(!show);
+              handleClearSearch();
+            }}
             to={"/gallery"}
             liText="Gallery"
             iconName={<FaAngleDown />}
           />
           <Li
-            onclick={() => setShow(!show)}
+            onclick={() => {
+              setShow(!show);
+              handleClearSearch();
+            }}
             to={"/keyperson"}
             liText="Key Person Sales & Service"
             iconName={<FaAngleDown />}
           />
           <Li
-            onclick={() => setShow(!show)}
+            onclick={() => {
+              setShow(!show);
+              handleClearSearch();
+            }}
             to={"/contact"}
             liText="Contact"
             iconName={<FaAngleDown />}
@@ -153,7 +181,9 @@ export const Navbar = () => {
                 ))
               ) : (
                 <div className=" w-full h-full">
-                  <p className="font-bold text-2xl text-red-400 text-center w-full">Product not found!</p>
+                  <p className="font-bold text-2xl text-red-400 text-center w-full">
+                    Product not found!
+                  </p>
                 </div>
               )}
             </div>
@@ -162,7 +192,10 @@ export const Navbar = () => {
 
         {/* Mobile Menu Toggle Icon */}
         <div
-          onClick={() => setShow(!show)} // Toggle mobile menu visibility
+          onClick={() => {
+            setShow(!show);
+            handleClearSearch();
+          }} // Toggle mobile menu visibility
           className="flex justify-end xl:hidden cursor-pointer z-50"
         >
           <PiDotsNineBold className="text-3xl" />
