@@ -97,7 +97,7 @@ export const Navbar = () => {
           />
 
           {/* Search Box */}
-          <div className="search relative w-full xl:w-auto border rounded-xl overflow-hidden xl:ml-4 mt-1">
+          <div className="search relative w-full xl:w-auto border rounded-xl overflow-hidden xl:ml-4 mt-1 cursor-pointer">
             <input
               className="xl:w-[150px] rounded-xl w-full xl:py-2 xl:px-5 px-3 outline-0 bg-white"
               type="text"
@@ -109,7 +109,7 @@ export const Navbar = () => {
           </div>
 
           <div
-            className={`absolute max-h-[800px] overflow-hidden overflow-y-scroll top-32 left-1/2 -translate-x-1/2 mx-auto bg-red-200 p-5 rounded-2xl max-w-full w-full  transition-all duration-500 ${
+            className={`absolute max-h-[800px] overflow-hidden overflow-y-scroll top-32 left-1/2 -translate-x-1/2 mx-auto bg-gray-200 p-5 rounded-2xl max-w-full w-full  transition-all duration-500 ${
               search ? "" : "hidden"
             }`}
           >
@@ -152,7 +152,9 @@ export const Navbar = () => {
                   </div>
                 ))
               ) : (
-                <div>No reuslt found!</div>
+                <div className=" w-full h-full">
+                  <p className="font-bold text-2xl text-red-400 text-center w-full">Product not found!</p>
+                </div>
               )}
             </div>
           </div>
