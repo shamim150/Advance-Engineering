@@ -37,7 +37,7 @@ const AboutUs = () => {
 
           <div className="text-center">
             <h3 className="text-xl font-bold text-gray-900 sm:text-2xl">Our Values</h3>
-            <ul className="mt-4 text-base sm:text-lg text-gray-600 list-disc list-inside">
+            <ul className="mt-4 text-base sm:text-lg text-gray-600 font-semibold ">
               <li>Innovation & Excellence</li>
               <li>Integrity & Trust</li>
               <li>Sustainability & Responsibility</li>

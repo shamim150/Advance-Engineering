@@ -22,7 +22,7 @@ const OurJourney = () => {
            
 
             <div className='flex justify-center items-center'>
-            <img className='max-w-[700px] h-auto object-cover w-full ' src={'/Homepage/product_1.jpg'} alt="" />
+            <img className='max-w-[700px] h-auto object-cover w-full rounded-xl ' src={'/Homepage/product_1.jpg'} alt="" />
             </div>
 
 
